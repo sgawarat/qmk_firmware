@@ -55,7 +55,7 @@ inline bool matrix_is_on(uint8_t row, uint8_t col) {
     return (matrix[row] & ((matrix_row_t)1 << col));
 }
 
-inline matrix_row_t matrix_get_row(uint8_t row) {
+matrix_row_t matrix_get_row(uint8_t row) {
     // Matrix mask lets you disable switches in the returned matrix data. For example, if you have a
     // switch blocker installed and the switch is always pressed.
 #ifdef MATRIX_MASKED

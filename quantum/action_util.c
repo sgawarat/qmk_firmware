@@ -107,10 +107,10 @@ bool has_oneshot_mods_timed_out(void) {
  */
 static uint8_t oneshot_layer_data = 0;
 
-inline uint8_t get_oneshot_layer(void) {
+uint8_t get_oneshot_layer(void) {
     return oneshot_layer_data >> 3;
 }
-inline uint8_t get_oneshot_layer_state(void) {
+uint8_t get_oneshot_layer_state(void) {
     return oneshot_layer_data & 0b111;
 }
 
